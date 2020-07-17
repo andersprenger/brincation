@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aprenda Inglês</string>
+    <string name="aba_title_numeros">Números</string>
+    <string name="aba_title_vogais">Vogais</string>
+    <string name="aba_title_bichos">Bichos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

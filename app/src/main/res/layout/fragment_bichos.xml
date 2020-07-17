@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".ui.bichos.BichosFragment">
+
+    <ImageView
+        android:id="@+id/cachorro"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/cao"
+        app:layout_constraintBottom_toTopOf="@+id/leao"
+        app:layout_constraintEnd_toStartOf="@+id/gato"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gato"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/gato"
+        app:layout_constraintBottom_toTopOf="@+id/macaco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cachorro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/leao"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/leao"
+        app:layout_constraintBottom_toTopOf="@+id/ovelha"
+        app:layout_constraintEnd_toStartOf="@+id/macaco"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cachorro" />
+
+    <ImageView
+        android:id="@+id/macaco"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/macaco"
+        app:layout_constraintBottom_toTopOf="@+id/vaca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/leao"
+        app:layout_constraintTop_toBottomOf="@+id/gato" />
+
+    <ImageView
+        android:id="@+id/ovelha"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ovelha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vaca"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leao" />
+
+    <ImageView
+        android:id="@+id/vaca"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/vaca"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ovelha"
+        app:layout_constraintTop_toBottomOf="@+id/macaco" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
