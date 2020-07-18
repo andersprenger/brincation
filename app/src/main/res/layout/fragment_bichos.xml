@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/cachorro"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/cao"
         app:layout_constraintBottom_toTopOf="@+id/leao"
         app:layout_constraintEnd_toStartOf="@+id/gato"
@@ -21,8 +21,8 @@
 
     <ImageView
         android:id="@+id/gato"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/gato"
         app:layout_constraintBottom_toTopOf="@+id/macaco"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,8 +32,8 @@
 
     <ImageView
         android:id="@+id/leao"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/leao"
         app:layout_constraintBottom_toTopOf="@+id/ovelha"
         app:layout_constraintEnd_toStartOf="@+id/macaco"
@@ -43,8 +43,8 @@
 
     <ImageView
         android:id="@+id/macaco"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/macaco"
         app:layout_constraintBottom_toTopOf="@+id/vaca"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,8 +54,8 @@
 
     <ImageView
         android:id="@+id/ovelha"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/ovelha"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/vaca"
@@ -65,8 +65,8 @@
 
     <ImageView
         android:id="@+id/vaca"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/vaca"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
