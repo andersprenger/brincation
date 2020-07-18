@@ -28,11 +28,6 @@ public class BichosFragment extends Fragment implements View.OnClickListener {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -55,34 +50,35 @@ public class BichosFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.cachorro:
-                mediaPlayer(R.raw.dog);
+                setMediaPlayer(R.raw.dog);
                 break;
             case R.id.gato:
-                mediaPlayer(R.raw.cat);
+                setMediaPlayer(R.raw.cat);
                 break;
             case R.id.leao:
-                mediaPlayer(R.raw.lion);
+                setMediaPlayer(R.raw.lion);
                 break;
             case R.id.macaco:
-                mediaPlayer(R.raw.monkey);
+                setMediaPlayer(R.raw.monkey);
                 break;
             case R.id.ovelha:
-                mediaPlayer(R.raw.sheep);
+                setMediaPlayer(R.raw.sheep);
                 break;
             case R.id.vaca:
-                mediaPlayer(R.raw.cow);
+                setMediaPlayer(R.raw.cow);
                 break;
 
         }
     }
 
-    private void mediaPlayer(int id){
+    private void setMediaPlayer(int id){
         mediaPlayer = MediaPlayer.create(getActivity(), id);
         mediaPlayer.start();
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
                 mediaPlayer.release();
+                mediaPlayer = null;
             }
         });
     }
